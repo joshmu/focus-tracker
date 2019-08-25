@@ -1,5 +1,5 @@
 {
-  "name": "focus",
+  "name": "focus-tracker",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,6 +9,7 @@
   "author": "josh mu",
   "license": "ISC",
   "dependencies": {
+    "moment": "^2.24.0",
     "run-jxa": "^2.0.0"
   }
 }
