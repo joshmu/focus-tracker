@@ -45,7 +45,7 @@ const run = async () => {
         // app = app[0].toUpperCase() + app.slice(1)    // capitalize
         db[app] ? db[app] += config.interval : db[app] = config.interval
         let duration = moment.duration().add(db[app], 's').as('minutes').toFixed(1)
-        console.log(`${app}: ${duration} minutes`)
+        console.log(`${app}: ${duration} minutes   (${db[app]})`)
         fs.writeFileSync(__dirname + config.dbPath, JSON.stringify(db))
     } else {
         // console.log('sleeping...')
