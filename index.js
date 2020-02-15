@@ -71,14 +71,15 @@ const run = async () => {
     }
     */
 
-  // sleep
-  await sleep(config.interval)
-  process.exit(0)
   return
-  // await run()
 }
 
 ;(async () => {
   // console.log('FOCUS TRACKER')
-  await run()
+  // using infinite while loop to avoid recursive call
+  // this should avoid increasing the stack
+  while (true) {
+    await run()
+    await sleep(config.interval)
+  }
 })()
