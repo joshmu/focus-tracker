@@ -2,9 +2,8 @@ module.exports = {
     apps : [{
         name        : "focus-tracker",
         script      : "./index.js",
-        watch       : true,
+        watch       : false,
         instances   : 1,
-        ignore_watch: [”db.json”, ”[\/\\]\./”, “node_modules”],
-        max_restarts: 10
+        max_restarts: 10,
     }]
 }
