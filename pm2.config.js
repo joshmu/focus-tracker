@@ -4,7 +4,7 @@ module.exports = {
         script      : "./index.js",
         watch       : true,
         instances   : 1,
-        ignore_watch: [”*.json”, ”[\/\\]\./”, “node_modules”],
+        ignore_watch: [”db.json”, ”[\/\\]\./”, “node_modules”],
         max_restarts: 10
     }]
 }
